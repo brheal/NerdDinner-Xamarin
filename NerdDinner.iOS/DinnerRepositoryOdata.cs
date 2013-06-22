@@ -15,7 +15,7 @@ namespace NerdDinner
 				request.RootElement = "d";
 				request.Resource = "/Dinners";
 				request.AddParameter ("$format", "json");
-				request.AddParameter ("$top", 5);
+				request.AddParameter ("$top", 10);
 				request.AddParameter ("$orderby", "EventDate");
 				request.AddParameter ("$filter", string.Format ("year(EventDate) ge {0} and month(EventDate) ge {1} and day(EventDate) ge {2}", DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day));
 

@@ -1,3 +1,8 @@
+2013-06-22  Peter Mourfield  <pete@mourfield.com>
+
+	* TabBarController.cs:
+	* DinnerRepositoryOdata.cs: 
+
 2013-06-21  Peter Mourfield  <pete@mourfield.com>
 
 	* Main.cs:

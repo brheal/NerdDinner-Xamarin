@@ -26,14 +26,14 @@ namespace NerdDinner
 
 			_listNav = new UINavigationController
 			{
-				TabBarItem = new UITabBarItem("List", UIImage.FromFile("Tabs/speakers.png"), 1)
+				TabBarItem = new UITabBarItem("List", UIImage.FromFile("Tabs/sessions.png"), 1)
 			};
 			_listNav.PushViewController(_dinnerListView, false);
 			_dinnerListView.NavigationItem.Title = "List";
 
 			_mapNav = new UINavigationController
 			{
-				TabBarItem = new UITabBarItem("Map", UIImage.FromFile("Tabs/schedule.png"), 1)
+				TabBarItem = new UITabBarItem("Map", UIImage.FromFile("Tabs/maps.png"), 1)
 			};
 			_mapNav.PushViewController(_dinnerMapView, false);
 			_dinnerMapView.NavigationItem.Title = "Map";
