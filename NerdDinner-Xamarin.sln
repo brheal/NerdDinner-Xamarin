@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdDinner.iOS", "NerdDinner.iOS\NerdDinner.iOS.csproj", "{19BD3807-580D-489B-9382-74CA59D002DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdDinner.Common", "NerdDinner.Common\NerdDinner.Common.csproj", "{37990D87-867C-41B9-924A-EFBC1CBAFD59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19BD3807-580D-489B-9382-74CA59D002DB}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{19BD3807-580D-489B-9382-74CA59D002DB}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{19BD3807-580D-489B-9382-74CA59D002DB}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{19BD3807-580D-489B-9382-74CA59D002DB}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{19BD3807-580D-489B-9382-74CA59D002DB}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{19BD3807-580D-489B-9382-74CA59D002DB}.Debug|iPhone.Build.0 = Debug|iPhone
+		{19BD3807-580D-489B-9382-74CA59D002DB}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{19BD3807-580D-489B-9382-74CA59D002DB}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{19BD3807-580D-489B-9382-74CA59D002DB}.Release|iPhone.ActiveCfg = Release|iPhone
+		{19BD3807-580D-489B-9382-74CA59D002DB}.Release|iPhone.Build.0 = Release|iPhone
+		{19BD3807-580D-489B-9382-74CA59D002DB}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{19BD3807-580D-489B-9382-74CA59D002DB}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{37990D87-867C-41B9-924A-EFBC1CBAFD59}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{37990D87-867C-41B9-924A-EFBC1CBAFD59}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{37990D87-867C-41B9-924A-EFBC1CBAFD59}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{37990D87-867C-41B9-924A-EFBC1CBAFD59}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{37990D87-867C-41B9-924A-EFBC1CBAFD59}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{37990D87-867C-41B9-924A-EFBC1CBAFD59}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{37990D87-867C-41B9-924A-EFBC1CBAFD59}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{37990D87-867C-41B9-924A-EFBC1CBAFD59}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{37990D87-867C-41B9-924A-EFBC1CBAFD59}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{37990D87-867C-41B9-924A-EFBC1CBAFD59}.Release|iPhone.Build.0 = Release|Any CPU
+		{37990D87-867C-41B9-924A-EFBC1CBAFD59}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{37990D87-867C-41B9-924A-EFBC1CBAFD59}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = NerdDinner.iOS\NerdDinner.iOS.csproj
+		version = 1.0
+	EndGlobalSection
+EndGlobal

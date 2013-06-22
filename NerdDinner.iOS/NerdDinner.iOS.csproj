@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19BD3807-580D-489B-9382-74CA59D002DB}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NerdDinner</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>NerdDinner</AssemblyName>
+    <ReleaseVersion>1.0</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <BuildIpa>true</BuildIpa>
+    <IpaPackageName />
+    <MtouchI18n />
+    <MtouchArch>ARMv7</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <BuildIpa>true</BuildIpa>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <ConsolePause>false</ConsolePause>
+    <CodesignProvision>83700D09-F34A-4F12-8781-E7C21ED65FE4</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignProvision>F432E3B9-9F9F-45C6-AD3C-98CBEF0BB2F8</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="System.Json" />
+    <Reference Include="RestSharp.MonoTouch">
+      <HintPath>..\restsharp-104.1.0\lib\ios\RestSharp.MonoTouch.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoTouch.Dialog-1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\Tabs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="BasicMapAnnotation.cs" />
+    <Compile Include="DinnerListViewController.cs" />
+    <Compile Include="DinnerMapViewController.cs" />
+    <Compile Include="AboutViewController.cs" />
+    <Compile Include="DinnerDetailViewController.cs" />
+    <Compile Include="DinnerRepositoryOdata.cs" />
+    <Compile Include="DinnerDataSource.cs" />
+    <Compile Include="DinnerCell.cs" />
+    <Compile Include="DinnerDelegate.cs" />
+    <Compile Include="DinnerViewModel.cs" />
+    <Compile Include="Property.cs" />
+    <Compile Include="PropertyGroup.cs" />
+    <Compile Include="Reachability.cs" />
+    <Compile Include="Appirater.cs" />
+    <Compile Include="TabBarController.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="Resources\logo.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\splash1.png" />
+    <BundleResource Include="Resources\iPhoneIcon_Big.png" />
+    <BundleResource Include="Resources\iPhoneIcon_Medium.png" />
+    <BundleResource Include="Resources\iPhoneIcon_Small.png" />
+    <BundleResource Include="Resources\nerd.jpg" />
+    <BundleResource Include="Resources\Tabs\about%402x.png" />
+    <BundleResource Include="Resources\Tabs\exhibitors%402x.png" />
+    <BundleResource Include="Resources\Tabs\favorites%402x.png" />
+    <BundleResource Include="Resources\Tabs\maps.png" />
+    <BundleResource Include="Resources\Tabs\maps%402x.png" />
+    <BundleResource Include="Resources\Tabs\rss.png" />
+    <BundleResource Include="Resources\Tabs\rss%402x.png" />
+    <BundleResource Include="Resources\Tabs\schedule.png" />
+    <BundleResource Include="Resources\Tabs\schedule%402x.png" />
+    <BundleResource Include="Resources\Tabs\sessions.png" />
+    <BundleResource Include="Resources\Tabs\sessions%402x.png" />
+    <BundleResource Include="Resources\Tabs\speakers.png" />
+    <BundleResource Include="Resources\Tabs\speakers%402x.png" />
+    <BundleResource Include="Resources\Tabs\twitter.png" />
+    <BundleResource Include="Resources\Tabs\twitter%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NerdDinner.Common\NerdDinner.Common.csproj">
+      <Project>{37990D87-867C-41B9-924A-EFBC1CBAFD59}</Project>
+      <Name>NerdDinner.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

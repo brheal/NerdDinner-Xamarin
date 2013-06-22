@@ -1,0 +1,22 @@
+2013-06-21  Peter Mourfield  <pete@mourfield.com>
+
+	* Main.cs:
+	* Info.plist:
+	* Property.cs:
+	* Appirater.cs:
+	* DinnerCell.cs:
+	* AppDelegate.cs:
+	* Reachability.cs:
+	* PropertyGroup.cs:
+	* DinnerDelegate.cs:
+	* DinnerViewModel.cs:
+	* DinnerDataSource.cs:
+	* TabBarController.cs:
+	* NerdDinner.iOS.csproj:
+	* BasicMapAnnotation.cs:
+	* AboutViewController.cs:
+	* DinnerRepositoryOdata.cs:
+	* DinnerMapViewController.cs:
+	* DinnerListViewController.cs:
+	* DinnerDetailViewController.cs: 
+
